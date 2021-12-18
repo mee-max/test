@@ -1,0 +1,1172 @@
+<html lang="en" class="js"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Chart.js - My Admin Template</title>
+
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="assets/styles/style-horizontal.min.css">
+	
+	<!-- Material Design Icon -->
+	<link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.css">
+
+	<!-- mCustomScrollbar -->
+	<link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+	<!-- Waves Effect -->
+	<link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
+
+	<!-- Sweet Alert -->
+	<link rel="stylesheet" href="assets/plugin/sweet-alert/sweetalert.css">
+	
+</head>
+
+<body>
+<header class="fixed-header">
+	<div class="header-top">
+		<div class="container">
+			<div class="pull-left">
+				<a href="index.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>安屿医疗</a>
+			</div>
+			<!-- /.pull-left -->
+			<div class="pull-right">
+				<div class="ico-item hidden-on-desktop">
+					<button type="button" class="menu-button js__menu_button fa fa-bars waves-effect waves-light"></button>
+				</div>
+				<!-- /.ico-item hidden-on-desktop -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-magnify js__toggle_open" data-target="#searchform-header"></a>
+					<form action="#" id="searchform-header" class="searchform js__toggle"><input type="search" placeholder="Search..." class="input-search"><button class="mdi mdi-magnify button-search" type="submit"></button></form>
+					<!-- /.searchform -->
+				</div>
+				<!-- /.ico-item -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-email notice-alarm js__toggle_open" data-target="#message-popup"></a>
+					<div id="message-popup" class="notice-popup js__toggle" data-space="55" style="height: 634px;">
+						<h2 class="popup-title">Recent Messages<a href="#" class="pull-right text-danger">New message</a></h2>
+						<!-- /.popup-title -->
+						<div class="content mCustomScrollbar _mCS_1"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+							<ul class="notice-list">
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">John Doe</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">10 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-3.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Harry Halen</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">15 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-4.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Thomas Taylor</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">30 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Jennifer</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">45 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-5.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Helen Candy</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">45 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-2.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Anna Cavan</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">1 hour ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar bg-success"><i class="fa fa-user"></i></span>
+										<span class="name">Jenny Betty</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">1 day ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-5.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Denise Peterson</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">1 year ago</span>
+									</a>
+								</li>
+							</ul>
+							<!-- /.notice-list -->
+							<a href="#" class="notice-read-more">See more messages <i class="fa fa-angle-down"></i></a>
+						</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 518px; top: 0px; display: block; max-height: 574px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+						<!-- /.content -->
+					</div>
+					<!-- /#message-popup -->
+				</div>
+				<!-- /.ico-item -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-bell notice-alarm js__toggle_open" data-target="#notification-popup"></a>
+					<div id="notification-popup" class="notice-popup js__toggle" data-space="55" style="height: 634px;">
+						<h2 class="popup-title">Your Notifications</h2>
+						<!-- /.popup-title -->
+						<div class="content mCustomScrollbar _mCS_2"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+							<ul class="notice-list">
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">John Doe</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">10 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-2.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Anna William</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">15 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar bg-warning"><i class="fa fa-warning"></i></span>
+										<span class="name">Update Status</span>
+										<span class="desc">Failed to get available update data. To ensure the please contact us.</span>
+										<span class="time">30 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Jennifer</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">45 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-6.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Michael Zenaty</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">50 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-4.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Simon</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">1 hour</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar bg-violet"><i class="fa fa-flag"></i></span>
+										<span class="name">Account Contact Change</span>
+										<span class="desc">A contact detail associated with your account has been changed.</span>
+										<span class="time">2 hours</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-7.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Helen 987</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">Yesterday</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-2.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Denise Jenny</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">Oct, 28</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-8.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Thomas William</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">Oct, 27</span>
+									</a>
+								</li>
+							</ul>
+							<!-- /.notice-list -->
+							<a href="#" class="notice-read-more">See more messages <i class="fa fa-angle-down"></i></a>
+						</div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 421px; top: 0px; display: block; max-height: 574px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+						<!-- /.content -->
+					</div>
+					<!-- /#notification-popup -->
+				</div>
+				<!-- /.ico-item -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-account js__toggle_open" data-target="#user-status"></a>
+					<div id="user-status" class="user-status js__toggle">
+						<a href="#" class="avatar"><img src="assets/images/avatar.png" alt=""><span class="status online"></span></a>
+						<h5 class="name"><a href="profile.html">Emily Stanley</a></h5>
+						<h5 class="position">Administrator</h5>
+						<!-- /.name -->
+						<div class="control-items">
+							<div class="control-item"><a href="#" title="Settings"><i class="fa fa-gear"></i></a></div>
+							<div class="control-item"><a href="#" class="js__logout" title="Log out"><i class="fa fa-power-off"></i></a></div>
+						</div>
+						<!-- /.control-items -->
+					</div>
+					<!-- /#user-status -->
+				</div>
+				<!-- /.ico-item -->
+			</div>
+			<!-- /.pull-right -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.header-top -->
+	
+	<!-- /.nav-horizontal -->
+</header>
+<!-- /.fixed-header -->
+
+<div id="wrapper">
+	<div class="main-content container">
+		<div class="row small-spacing">
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">病人数量</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="bar-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#bar-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">新增病人数</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="line-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#line-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">病人分类</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="pie-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#pie-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">病情统计</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="radar-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#radar-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+		</div>
+		<!-- /.row small-spacing -->		
+		<footer class="footer">
+			<ul class="list-inline">
+				<li>Copyright © 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">网页模板</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+		</footer>
+	</div>
+	<!-- /.main-content -->
+</div><!--/#wrapper -->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="assets/script/html5shiv.min.js"></script>
+		<script src="assets/script/respond.min.js"></script>
+	<![endif]-->
+	<!-- 
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/scripts/jquery.min.js"></script>
+	<script src="assets/scripts/modernizr.min.js"></script>
+	<script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugin/nprogress/nprogress.js"></script>
+	<script src="assets/plugin/sweet-alert/sweetalert.min.js"></script>
+	<script src="assets/plugin/waves/waves.min.js"></script>
+
+	<!-- chart.js Chart -->
+	<script src="assets/plugin/chart/chartjs/Chart.bundle.min.js"></script>
+	<script src="assets/scripts/chart.chartjs.init.min.js"></script>
+
+	<script src="assets/scripts/main.min.js"></script>
+	<script src="assets/scripts/horizontal-menu.min.js"></script>
+
+</body></html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Chart.js - My Admin Template</title>
+
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="assets/styles/style-horizontal.min.css">
+	
+	<!-- Material Design Icon -->
+	<link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.css">
+
+	<!-- mCustomScrollbar -->
+	<link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+	<!-- Waves Effect -->
+	<link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
+
+	<!-- Sweet Alert -->
+	<link rel="stylesheet" href="assets/plugin/sweet-alert/sweetalert.css">
+	
+</head>
+<body>
+<header class="fixed-header">
+	<div class="header-top">
+		<div class="container">
+			<div class="pull-left">
+				<a href="index.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>安屿医疗</a>
+			</div>
+			<!-- /.pull-left -->
+			<div class="pull-right">
+				<div class="ico-item hidden-on-desktop">
+					<button type="button" class="menu-button js__menu_button fa fa-bars waves-effect waves-light"></button>
+				</div>
+				<!-- /.ico-item hidden-on-desktop -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-magnify js__toggle_open" data-target="#searchform-header"></a>
+					<form action="#" id="searchform-header" class="searchform js__toggle"><input type="search" placeholder="Search..." class="input-search"><button class="mdi mdi-magnify button-search" type="submit"></button></form>
+					<!-- /.searchform -->
+				</div>
+				<!-- /.ico-item -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-email notice-alarm js__toggle_open" data-target="#message-popup"></a>
+					<div id="message-popup" class="notice-popup js__toggle" data-space="55" style="height: 634px;">
+						<h2 class="popup-title">Recent Messages<a href="#" class="pull-right text-danger">New message</a></h2>
+						<!-- /.popup-title -->
+						<div class="content mCustomScrollbar _mCS_1"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+							<ul class="notice-list">
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">John Doe</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">10 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-3.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Harry Halen</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">15 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-4.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Thomas Taylor</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">30 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Jennifer</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">45 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-5.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Helen Candy</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">45 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-2.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Anna Cavan</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">1 hour ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar bg-success"><i class="fa fa-user"></i></span>
+										<span class="name">Jenny Betty</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">1 day ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-5.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Denise Peterson</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">1 year ago</span>
+									</a>
+								</li>
+							</ul>
+							<!-- /.notice-list -->
+							<a href="#" class="notice-read-more">See more messages <i class="fa fa-angle-down"></i></a>
+						</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 518px; top: 0px; display: block; max-height: 574px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+						<!-- /.content -->
+					</div>
+					<!-- /#message-popup -->
+				</div>
+				<!-- /.ico-item -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-bell notice-alarm js__toggle_open" data-target="#notification-popup"></a>
+					<div id="notification-popup" class="notice-popup js__toggle" data-space="55" style="height: 634px;">
+						<h2 class="popup-title">Your Notifications</h2>
+						<!-- /.popup-title -->
+						<div class="content mCustomScrollbar _mCS_2"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+							<ul class="notice-list">
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">John Doe</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">10 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-2.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Anna William</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">15 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar bg-warning"><i class="fa fa-warning"></i></span>
+										<span class="name">Update Status</span>
+										<span class="desc">Failed to get available update data. To ensure the please contact us.</span>
+										<span class="time">30 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Jennifer</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">45 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-6.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Michael Zenaty</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">50 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-4.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Simon</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">1 hour</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar bg-violet"><i class="fa fa-flag"></i></span>
+										<span class="name">Account Contact Change</span>
+										<span class="desc">A contact detail associated with your account has been changed.</span>
+										<span class="time">2 hours</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-7.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Helen 987</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">Yesterday</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-2.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Denise Jenny</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">Oct, 28</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-8.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Thomas William</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">Oct, 27</span>
+									</a>
+								</li>
+							</ul>
+							<!-- /.notice-list -->
+							<a href="#" class="notice-read-more">See more messages <i class="fa fa-angle-down"></i></a>
+						</div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 421px; top: 0px; display: block; max-height: 574px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+						<!-- /.content -->
+					</div>
+					<!-- /#notification-popup -->
+				</div>
+				<!-- /.ico-item -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-account js__toggle_open" data-target="#user-status"></a>
+					<div id="user-status" class="user-status js__toggle">
+						<a href="#" class="avatar"><img src="assets/images/avatar.png" alt=""><span class="status online"></span></a>
+						<h5 class="name"><a href="profile.html">Emily Stanley</a></h5>
+						<h5 class="position">Administrator</h5>
+						<!-- /.name -->
+						<div class="control-items">
+							<div class="control-item"><a href="#" title="Settings"><i class="fa fa-gear"></i></a></div>
+							<div class="control-item"><a href="#" class="js__logout" title="Log out"><i class="fa fa-power-off"></i></a></div>
+						</div>
+						<!-- /.control-items -->
+					</div>
+					<!-- /#user-status -->
+				</div>
+				<!-- /.ico-item -->
+			</div>
+			<!-- /.pull-right -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.header-top -->
+	
+	<!-- /.nav-horizontal -->
+</header>
+<!-- /.fixed-header -->
+
+<div id="wrapper">
+	<div class="main-content container">
+		<div class="row small-spacing">
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">病人数量</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="bar-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#bar-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">新增病人数</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="line-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#line-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">病人分类</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="pie-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#pie-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">病情统计</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="radar-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#radar-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+		</div>
+		<!-- /.row small-spacing -->		
+		<footer class="footer">
+			<ul class="list-inline">
+				<li>Copyright © 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">网页模板</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+		</footer>
+	</div>
+	<!-- /.main-content -->
+</div><!--/#wrapper -->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="assets/script/html5shiv.min.js"></script>
+		<script src="assets/script/respond.min.js"></script>
+	<![endif]-->
+	<!-- 
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/scripts/jquery.min.js"></script>
+	<script src="assets/scripts/modernizr.min.js"></script>
+	<script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugin/nprogress/nprogress.js"></script>
+	<script src="assets/plugin/sweet-alert/sweetalert.min.js"></script>
+	<script src="assets/plugin/waves/waves.min.js"></script>
+
+	<!-- chart.js Chart -->
+	<script src="assets/plugin/chart/chartjs/Chart.bundle.min.js"></script>
+	<script src="assets/scripts/chart.chartjs.init.min.js"></script>
+
+	<script src="assets/scripts/main.min.js"></script>
+	<script src="assets/scripts/horizontal-menu.min.js"></script>
+
+</body>
+<html lang="en" class="js"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Chart.js - My Admin Template</title>
+
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="assets/styles/style-horizontal.min.css">
+	
+	<!-- Material Design Icon -->
+	<link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.css">
+
+	<!-- mCustomScrollbar -->
+	<link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+	<!-- Waves Effect -->
+	<link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
+
+	<!-- Sweet Alert -->
+	<link rel="stylesheet" href="assets/plugin/sweet-alert/sweetalert.css">
+	
+</head>
+
+<body>
+<header class="fixed-header">
+	<div class="header-top">
+		<div class="container">
+			<div class="pull-left">
+				<a href="index.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>安屿医疗</a>
+			</div>
+			<!-- /.pull-left -->
+			<div class="pull-right">
+				<div class="ico-item hidden-on-desktop">
+					<button type="button" class="menu-button js__menu_button fa fa-bars waves-effect waves-light"></button>
+				</div>
+				<!-- /.ico-item hidden-on-desktop -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-magnify js__toggle_open" data-target="#searchform-header"></a>
+					<form action="#" id="searchform-header" class="searchform js__toggle"><input type="search" placeholder="Search..." class="input-search"><button class="mdi mdi-magnify button-search" type="submit"></button></form>
+					<!-- /.searchform -->
+				</div>
+				<!-- /.ico-item -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-email notice-alarm js__toggle_open" data-target="#message-popup"></a>
+					<div id="message-popup" class="notice-popup js__toggle" data-space="55" style="height: 634px;">
+						<h2 class="popup-title">Recent Messages<a href="#" class="pull-right text-danger">New message</a></h2>
+						<!-- /.popup-title -->
+						<div class="content mCustomScrollbar _mCS_1"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+							<ul class="notice-list">
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">John Doe</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">10 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-3.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Harry Halen</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">15 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-4.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Thomas Taylor</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">30 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Jennifer</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">45 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-5.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Helen Candy</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">45 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-2.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Anna Cavan</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">1 hour ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar bg-success"><i class="fa fa-user"></i></span>
+										<span class="name">Jenny Betty</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">1 day ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-5.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Denise Peterson</span>
+										<span class="desc">Amet odio neque nobis consequuntur consequatur a quae, impedit facere repellat voluptates.</span>
+										<span class="time">1 year ago</span>
+									</a>
+								</li>
+							</ul>
+							<!-- /.notice-list -->
+							<a href="#" class="notice-read-more">See more messages <i class="fa fa-angle-down"></i></a>
+						</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 518px; top: 0px; display: block; max-height: 574px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+						<!-- /.content -->
+					</div>
+					<!-- /#message-popup -->
+				</div>
+				<!-- /.ico-item -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-bell notice-alarm js__toggle_open" data-target="#notification-popup"></a>
+					<div id="notification-popup" class="notice-popup js__toggle" data-space="55" style="height: 634px;">
+						<h2 class="popup-title">Your Notifications</h2>
+						<!-- /.popup-title -->
+						<div class="content mCustomScrollbar _mCS_2"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+							<ul class="notice-list">
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">John Doe</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">10 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-2.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Anna William</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">15 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar bg-warning"><i class="fa fa-warning"></i></span>
+										<span class="name">Update Status</span>
+										<span class="desc">Failed to get available update data. To ensure the please contact us.</span>
+										<span class="time">30 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-1.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Jennifer</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">45 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-6.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Michael Zenaty</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">50 min</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-4.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Simon</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">1 hour</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar bg-violet"><i class="fa fa-flag"></i></span>
+										<span class="name">Account Contact Change</span>
+										<span class="desc">A contact detail associated with your account has been changed.</span>
+										<span class="time">2 hours</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-7.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Helen 987</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">Yesterday</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-2.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Denise Jenny</span>
+										<span class="desc">Like your post: “Contact Form 7 Multi-Step”</span>
+										<span class="time">Oct, 28</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="assets/images/avatar-sm-8.jpg" alt="" class="mCS_img_loaded"></span>
+										<span class="name">Thomas William</span>
+										<span class="desc">Like your post: “Facebook Messenger”</span>
+										<span class="time">Oct, 27</span>
+									</a>
+								</li>
+							</ul>
+							<!-- /.notice-list -->
+							<a href="#" class="notice-read-more">See more messages <i class="fa fa-angle-down"></i></a>
+						</div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 421px; top: 0px; display: block; max-height: 574px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+						<!-- /.content -->
+					</div>
+					<!-- /#notification-popup -->
+				</div>
+				<!-- /.ico-item -->
+				<div class="ico-item">
+					<a href="#" class="ico-item mdi mdi-account js__toggle_open" data-target="#user-status"></a>
+					<div id="user-status" class="user-status js__toggle">
+						<a href="#" class="avatar"><img src="assets/images/avatar.png" alt=""><span class="status online"></span></a>
+						<h5 class="name"><a href="profile.html">Emily Stanley</a></h5>
+						<h5 class="position">Administrator</h5>
+						<!-- /.name -->
+						<div class="control-items">
+							<div class="control-item"><a href="#" title="Settings"><i class="fa fa-gear"></i></a></div>
+							<div class="control-item"><a href="#" class="js__logout" title="Log out"><i class="fa fa-power-off"></i></a></div>
+						</div>
+						<!-- /.control-items -->
+					</div>
+					<!-- /#user-status -->
+				</div>
+				<!-- /.ico-item -->
+			</div>
+			<!-- /.pull-right -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.header-top -->
+	
+	<!-- /.nav-horizontal -->
+</header>
+<!-- /.fixed-header -->
+
+<div id="wrapper">
+	<div class="main-content container">
+		<div class="row small-spacing">
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">病人数量</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="bar-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#bar-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">新增病人数</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="line-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#line-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">病人分类</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="pie-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#pie-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			
+			<!-- /.col-lg-6 col-md-12 -->
+
+			<div class="col-lg-6 col-md-12">
+				<div class="box-content"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"></iframe>
+					<h4 class="box-title">病情统计</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="radar-chartjs-chart" class="chartjs-chart" width="1354" height="902" style="display: block; width: 677px; height: 451px;"></canvas>
+					<!-- /#radar-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-md-12 -->
+		</div>
+		<!-- /.row small-spacing -->		
+		<footer class="footer">
+			<ul class="list-inline">
+				<li>Copyright © 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">网页模板</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+		</footer>
+	</div>
+	<!-- /.main-content -->
+</div><!--/#wrapper -->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="assets/script/html5shiv.min.js"></script>
+		<script src="assets/script/respond.min.js"></script>
+	<![endif]-->
+	<!-- 
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/scripts/jquery.min.js"></script>
+	<script src="assets/scripts/modernizr.min.js"></script>
+	<script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugin/nprogress/nprogress.js"></script>
+	<script src="assets/plugin/sweet-alert/sweetalert.min.js"></script>
+	<script src="assets/plugin/waves/waves.min.js"></script>
+
+	<!-- chart.js Chart -->
+	<script src="assets/plugin/chart/chartjs/Chart.bundle.min.js"></script>
+	<script src="assets/scripts/chart.chartjs.init.min.js"></script>
+
+	<script src="assets/scripts/main.min.js"></script>
+	<script src="assets/scripts/horizontal-menu.min.js"></script>
+
+</body></html>
